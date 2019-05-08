@@ -16,5 +16,5 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/hanyahong/spring-cloud-microservice.git
-          searchPaths: config
+          uri: https://github.com/wjt5992889/springCloud.git
+          searchPaths: config-repo

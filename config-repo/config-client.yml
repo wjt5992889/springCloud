@@ -1,0 +1,5 @@
+#随意设置的一个参数
+myblog:
+  name: 测试数据
+  url: http://www.baidu.com
+  location: NS
