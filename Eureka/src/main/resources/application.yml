@@ -1,11 +1,19 @@
 #server 端口号设置
 server:
-  port: 8081
+  port: 8761
 
 #注册中心设置，server本身不被发现
 eureka:
+  instance:
+    hostname: localhost
   client:
     registerWithEureka: false
     fetchRegistry: false
-  server:
-    waitTimeInMsWhenSyncEmpty: 0
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+#  server:
+#    waitTimeInMsWhenSyncEmpty: 0
+#    #自我保护模式关闭
+#    enableSelfPreservation: false
+## 清理间隔（单位毫秒，默认是60*1000）
+#    eviction-interval-timer-in-ms: 100
