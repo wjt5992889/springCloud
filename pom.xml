@@ -12,7 +12,8 @@
         <module>Eureka</module>
         <module>config</module>
         <module>config-client</module>
-        <module>ribbon</module>
+        <module>Ribbon</module>
+        <module>Feign</module>
     </modules>
 
     <parent>
