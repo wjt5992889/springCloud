@@ -11,3 +11,8 @@ server:
 spring:
   application:
     name: feign-client
+
+#springcloud Feign已经实现了Hystrix ,所以不用再引Hystrix的maven依赖
+feign:
+  hystrix:
+    enabled: true   #打开Feign自带的断路器

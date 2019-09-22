@@ -15,6 +15,9 @@
         <module>Ribbon</module>
         <module>Feign</module>
         <module>Admin</module>
+        <module>Zuul</module>
+        <module>zuul-sso</module>
+        <module>auth</module>
     </modules>
 
     <parent>

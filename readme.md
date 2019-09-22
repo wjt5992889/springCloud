@@ -1,5 +1,34 @@
-#Spring Cloud Notes
+Spring Cloud Notes
 ==============================================
+###Eureka
+* http://localhost:8761
+###Config
+* http://localhost:8082/config-client.yml
+###Ribbon
+* http://localhost:8092/ribbon/blog-info
+###Feign
+* inner ribbon     http://localhost:8093/feign/blog-info
+* ribbon           http://localhost:8093/feign/blog-info-cloud
+###Admin(monitor)
+* http://localhost:18080
+###Zuul
+* config-client http://localhost:8080/config-client/blog-info?token=ttt
+* ribbon        http://localhost:8080/ribbon-client/ribbon/blog-info?token=ttt
+* feign         http://localhost:8080/feign-client/feign/blog-info?token=ttt
+###Zuul-SSO
+* get token     http://localhost:8080/uaa/oauth/token
+>POST /uaa/oauth/token HTTP/1.1
+Host: localhost:8080
+Content-Type: application/x-www-form-urlencoded
+Authorization: Basic YW5kcm9pZDphbmRyb2lk
+Cache-Control: no-cache
+Postman-Token: 65cf246d-0522-0a6e-8b39-aae0d55e7dbb
+grant_type=password&username=fpf&password=fpf
+* get user      http://localhost:8080/uaa/user?access_token=502692b7-d2ad-4dab-9c1c-4fb9d411a1d9
+###auth-service
+
+
+----
 ##Spring Cloud Sub Project
 * ###Spring Cloud Config：
 >配置管理开发工具包，可以让你把配置放到远程服务器，目前支持本地存储、Git以及Subversion。
