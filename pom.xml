@@ -18,6 +18,7 @@
         <module>Zuul</module>
         <module>zuul-sso</module>
         <module>auth</module>
+        <module>client-SSO</module>
     </modules>
 
     <parent>

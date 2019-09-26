@@ -4,6 +4,9 @@ Spring Cloud Notes
 * http://localhost:8761
 ###Config
 * http://localhost:8082/config-client.yml
+###Config-Client
+###Client-SSO
+http://localhost:8080/config-client/blog-info?access_token=2b276a11-2c0a-4e70-acae-9c7064643f3d
 ###Ribbon
 * http://localhost:8092/ribbon/blog-info
 ###Feign
@@ -25,6 +28,10 @@ Cache-Control: no-cache
 Postman-Token: 65cf246d-0522-0a6e-8b39-aae0d55e7dbb
 grant_type=password&username=fpf&password=fpf
 * get user      http://localhost:8080/uaa/user?access_token=502692b7-d2ad-4dab-9c1c-4fb9d411a1d9
+* get blog      http://localhost:8080/accounts/blog-info?access_token=2b276a11-2c0a-4e70-acae-9c7064643f3d
+>token user fpf no access
+* get blog      http://localhost:8080/accounts/blog-info2?access_token=6439608e-af63-4ccf-9959-f4bb0a16e9d1
+>token user wl admin
 ###auth-service
 
 
